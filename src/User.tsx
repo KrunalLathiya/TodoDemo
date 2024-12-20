@@ -15,7 +15,7 @@ type TodoItem = {
 
 const User: React.FC<UserProfileProps> = ({ name, age }) => {
   // Typed state for todos
-
+  const [todos, setTodos] = useState<TodoItem[]>([]);
 
   // Typed input state
   const [inputText, setInputText] = useState<string>("");
